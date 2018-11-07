@@ -1,0 +1,92 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: KenChung
+ * Date: 2018/10/19
+ * Time: 17:55
+ * Email: 120825579@qq.com
+ */
+
+require_once 'yzbtkjListenV1/util/IPUtil.php';
+require_once 'yzbtkjListenV1/util/PageUtil.php';
+require_once 'yzbtkjListenV1/util/HttpUtil.php';
+
+$ip = IPUtil::getRealIpAddr ();
+$name = !empty($_POST['name'])?$_POST['name']:'';
+$phone = !empty($_POST['contact'])?$_POST['contact']:'';
+$qq = !empty($_POST['qq'])?$_POST['qq']:'';
+$business = !empty($_POST['profession'])?$_POST['profession']:'';
+$hasLicense = !empty($_POST['license'])?$_POST['license']:'';
+$isCertified = !empty($_POST['isCertified'])?$_POST['isCertified']:'';
+$hasOA = !empty($_POST['hasOA'])?$_POST['hasOA']:'';
+
+$device = IPUtil::getDeviceType();    
+$source = !empty($_POST['source'])?'gzhzs_'.$device.'_gw':'';
+$browser = $_SERVER['HTTP_USER_AGENT'];
+$userKey = md5($ip.'_'.$browser);
+
+//$remark = $_POST['remark'];
+
+if(empty($name)){
+    $returnParam = array(
+        'errorMsg' => '请填写名字',
+    );
+    echo PageUtil::setJsonReturn(-1 , $returnParam );
+    exit;
+}
+
+if(empty($phone)){
+    $returnParam = array(
+        'errorMsg' => '请填写联系方式',
+    );
+    echo PageUtil::setJsonReturn(-2 , $returnParam );
+    exit;
+}
+
+
+$IPProvince = IPUtil::getProvinceByIP($ip);
+
+$content = '【'.date('Y-m-d H:i:s').'】ip:'.$ip.' 名字:'.$name . ' 联系方式:'.$phone . ' qq:'.$qq. ' 行业：'.$business. ' 营业执照：'.$hasLicense. ' 公众号：'.$hasOA. ' 认证：'.$isCertified.' 省份：'.$IPProvince."\n";
+//$content .= $browser.' '.$userKey;
+error_log($content , 3 , '/web/php/tmp/xcx_gw_contactUs.log');
+
+$postUrl = 'http://m2.zfdmkj.com/process/wechat/appletTest/submitGW.php';
+
+$data = array(
+    'name' => $name,
+    'phone' => $phone,
+    'qq' => $qq,
+    'source' => $source,
+    'business' => $business,
+    'hasLicense' => $hasLicense,
+    'isCertified' => $isCertified,
+    'hasOA' => $hasOA,
+    'source' => '',
+    'device' => $device,
+    'ip' => $ip,
+    'browser' => $browser,
+    'userKey' => $userKey
+);
+
+$ret = HttpUtil::httpPost($postUrl, $data);
+//error_log($ret."\n\n", 3, '/web/php/tmp/xcx_gw_contactUs.log');
+
+if(!empty($ret)){
+    $result = json_decode($ret, true);
+    //error_log($result['result']."\n\n", 3, '/web/php/tmp/xcx_gw_contactUs.log');
+    //error_log($result['param']."\n\n", 3, '/web/php/tmp/xcx_gw_contactUs.log');
+    
+    if($result['result'] > 0){
+        $returnParam = !empty($result['param'])?$result['param']:array();
+        //error_log(json_encode($returnParam)."\n", 3, '/web/php/tmp/xcx_gw_contactUs.log');
+        $returnParam['errorMsg'] = '提交成功';
+        echo PageUtil::setJsonReturn(1 , $returnParam );
+        exit;
+    }
+}
+
+$returnParam = array(
+    'errorMsg' => '提交失败',
+);
+echo PageUtil::setJsonReturn(-3 , $returnParam );
+exit;

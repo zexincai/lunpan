@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="小程序,微信小程序,小程序制作,微信小程序制作,小程序工具,微信小程序工具,小程序开发,微信小程序开发,小程序问答,微信小程序问答,小程序平台,微信小程序平台">
+	<meta name="description" content="小程序管家，一站式搭建微信小程序，成功建立上千个小程序，累计服务2亿用户">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>关于我们-小程序管家</title>
+	<link rel="stylesheet" href="xcx_gw/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="xcx_gw/static/css/common.css">
+</head>
+
+<body>
+	<!-- 头部开始 -->
+	<header class="x-h">
+		<nav class="navbar navbar-expand-lg navbar-light .x-bg-light x-jz">
+			<a class="navbar-brand ml-md-4" href="#" style="font-size: 2.25rem;"><img class="mr-3" src="xcx_gw/static/images/log_header.png"
+				 alt="小程序管家">小程序管家</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto" style="text-align: center;">
+					<li class="nav-item"><a class="nav-link" href="index.html">首页
+							<span class="sr-only">(current)</span>
+						</a></li>
+					<li class="nav-item"><a class="nav-link" href="product.html">产品中心</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="case.html">精品案例</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="http://www.zfdmkj.com/article.php?page_type=a2">运营资讯</a></li>
+					<li class="nav-item  active"><a class="nav-link" href="about.html">关于我们</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- 头部结束 -->
+	<div class="main">
+		<div class="img_about">
+			<img src="xcx_gw/static/images/about.png" alt="">
+		</div>
+		<div class="about">
+			<div class="about-wrap">
+				<div class="contact_title">关于我们</div>
+				<div class="contact_title2">广东与众不同信息科技有限公司</div>
+				<div class="about-pg">
+					<div class="about-p1">
+						<span class='about-pic1'> </span> 本土企业，坐落广州天河区智汇产业园别墅区，创新企业集群地
+					</div>
+					<div class="about-p2">
+						<span class='about-pic2'> </span>资质荣誉：广东省高新科技企业，广州网络文化协会（GIIC）会员，广东省创业创新大赛三等奖
+					</div>
+					<div class="about-p3">
+						<span class='about-pic3'> </span>技术能力：13项软硬件专利及软件著作权；微信优质合作伙伴
+					</div>
+					<div class="about-p4">
+						公司成立于2014年，注册资本1000万元。创始团队来自于阿里、百度等知名互联网公司，致力于成为以科技驱动的新型移动互联网公司。经过4年的发展，打造了<br />
+						公众号助手（公众号类APP排名前三）、红英枪发票管家（广州地区占有率领先）、小程序管<br />家APP等具有竞争力的产品和业务。不断扩大在地区和行业的影响力。<br />
+						<br /> 未来，我们有更大的目标，期待优秀的人才加入，携手共进。
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact">
+			<div class="contact-wrap clearfix">
+				<div class="address">
+					<div class="address-header">
+						<span></span>公司地址
+					</div>
+					<div class="address-session">
+						<p>广州市天河区元岗路310号<br>
+							智汇创意园别墅区B3栋</p>
+					</div>
+				</div>
+				<div class="phone">
+					<div class="phone-header">
+						<span></span>联系方式
+					</div>
+					<div class="phone-session">
+						<p>9:00~18:00</p>
+						<p>电话: 020-87385096</p>
+						<p>QQ: 800135124<i></i></p>
+					</div>
+				</div>
+				<div class="accounts">
+					<div class="accounts-header">
+						<span></span>扫码关注公众号
+					</div>
+					<div class="accounts-session">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="serve">
+			<div class="contact-tip">输入信息后提交，为您一对一专属定制服务</div>
+			<div class="serve-success">
+				<div class="serve-content">
+					<p class="serve-tip"><span></span> 提交成功！</p>
+					<p class="serve-people">目前<span><i>105</i>人排队</span>，联系客服，获取最新优惠！</p>
+					<span class="serve-account-pic"></span>
+					<img src="xcx_gw/static/images/serve_account.png" alt="公众号">
+					<p>请扫码联系客服，更快地办理相关业务！</p>
+				</div>
+			</div>
+			<div class="serve-select">
+				<div class="serve-wrap">
+					<div class="contact_form1">
+						<div class="input_item">
+							<span>姓名</span> <input placeholder="请输入您的姓名" class="contact_input" id="name">
+						</div>
+						<div class="input_item">
+							<span>手机</span> <input placeholder="请输入您的联系方式" class="contact_input" id="contact">
+						</div>
+						<div class="input_item">
+							<span>QQ</span> <input placeholder="请输入您的联系方式" class="contact_input" id="qq">
+						</div>
+						<div class="input_item">
+							<span>行业</span> <input placeholder="请输入所在行业" class="contact_input" id="profession">
+						</div>
+					</div>
+					<hr class="contact_hr">
+					<div class="contact_form2">
+						<div class="contact_input_item1 clearfix">
+							<div class="license">营业执照</div>
+							<div class="contact_radio">
+								<input type="radio" name="license" value="Y" id="license1">
+								<label for="license1">有</label> &nbsp;&nbsp;<input type="radio" name="license" value="N" id="license2"> <label
+								 for="license2">暂无</label>
+							</div>
+						</div>
+						<div id="license_y" class="contact_input_item2 clearfix">
+							<div class="comnum">公众号</div>
+							<div class="contact_radio">
+								<div>
+									<input type="radio" name="official" value="1"> 有公众号，已认证<i>(加V)</i>
+								</div>
+								<div>
+									<input type="radio" name="official" value="2"> 有公众号，未认证<i>(无V)</i>
+								</div>
+								<div>
+									<input type="radio" name="official" value="3"> 暂无公众号
+								</div>
+								<div>
+									<i>*如有公众号，会加快小程序的开发进度</i>
+								</div>
+							</div>
+						</div>
+						<div id="license_n" style="display: none" class="contact_input_item2 clearfix">
+							<div class="comnum">公众号</div>
+							<div class="contact_radio">
+								<div>
+									<input type="radio" name="official" value="2"> 有公众号
+								</div>
+								<div>
+									<input type="radio" name="official" value="3"> 暂无公众号
+								</div>
+								<div>
+									<i>*如有公众号，会加快小程序的开发进度</i>
+								</div>
+							</div>
+						</div>
+
+						<div class="contact_input_item3">
+							<input placeholder='请简单描述需求,如"我想做个商城小程序"' class="contact_input_text" type="text" id="remark">
+						</div>
+					</div>
+
+				</div>
+				<button class="contact_send" onclick="btn_save()">发送信息</button>
+			</div>
+
+		</div>
+		<!-- 内容部分 -->
+
+		<!-- 尾部 -->
+		<div class="ft">
+			<div class="ft_wrap">
+				<div class="ft_line">
+					Copyright © 2015 广东与众不同信息科技有限公司&nbsp&nbsp&nbsp&nbsp<span>粤ICP备18034547号-1</span>
+				</div>
+			</div>
+			<!-- 尾部结束 -->
+			<script src="xcx_gw/static/js/jquery1.11.1.min.js">
+
+			</script>
+			<script src="xcx_gw/static/js/bootstrap.min.js"></script>
+			<script charset="utf-8" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+
+			<script>
+				$(":radio[name='license']").on("change", function () {
+					console.log("值改变了");
+					var checked = $(this).val();
+					$('#license_n input[name="official"]').prop("checked", "");
+					$('#license_y input[name="official"]').prop("checked", "");
+					if (checked == 'Y') {
+						$("#license_n").hide();
+						$("#license_y").show();
+					} else {
+						$("#license_y").hide();
+						$("#license_n").show();
+					}
+				});
+
+				//2s自动关闭提示
+				function autoTips(txt, ms, fn) {
+					var txt = txt.toString(),
+						ms = ~~ms <= 10 ? 10 : ms,
+						fn = typeof fn === 'function' ? fn :
+						function () {},
+						style =
+						'display:none;position:fixed;z-index:999;left:50%;top:50%;width:150px;padding:20px 0;line-height:1.5;margin-top:-25px;margin-left:-60px;background:rgba(0,0,0,.6);border-radius:8px;text-align:center;color:#fff;',
+						template = '<div class="autoTips" style="' + style + '">' +
+						txt + '</div>';
+					if ($('.autoTips').length < 1) {
+						$(template).appendTo('body').fadeIn();
+					} else {
+						$('.autoTips').html(txt).fadeIn();
+					}
+					setTimeout(function () {
+						$('.autoTips').fadeOut(fn);
+					}, ms);
+				};
+
+				function btn_save() {
+					var name = $("#name").val();
+					var contact = $("#contact").val();
+					var qq = $("#qq").val();
+					var profession = $("#profession").val();
+					//var remark = $("#remark").val();
+					var license = $("input[name='license']:checked").val()
+					var hasOA = '';
+					var isCertified = '';
+					var official = $("input[name='official']:checked").val()
+
+					if (!name) {
+						autoTips("请填写姓名");
+						return;
+					}
+					if (!contact) {
+						autoTips("请填写手机");
+						return;
+					}
+					if (!(/^1(3|4|5|7|8)\d{9}$/.test(contact))) {
+						autoTips("请输入正确的11位手机号码");
+						return;
+					}
+					if (!qq) {
+						autoTips("请填写qq号码");
+						return;
+					}
+					if (!(/^\d{5,15}$/.test(qq))) {
+						autoTips("请输入正确的qq号码");
+						return;
+					}
+					if (!profession) {
+						autoTips("请填写行业");
+						return;
+					}
+
+					if (!license) {
+						autoTips("请选择是否有营业执照");
+						return;
+					}
+
+					if (!official) {
+						autoTips("请选择有无公众号");
+						return;
+					}
+					switch (official) {
+						case '1':
+						case 1:
+							hasOA = 'Y';
+							isCertified = 'Y';
+							break;
+						case '2':
+						case 2:
+							hasOA = 'Y';
+							isCertified = 'N';
+							break;
+						case '3':
+						case 3:
+							hasOA = 'N';
+							isCertified = 'N';
+							break;
+						default:
+							autoTips("请选择有无公众号");
+							return;
+							break;
+					}
+
+					var data = {
+						name: name,
+						contact: contact,
+						qq: qq,
+						profession: profession,
+						//remark: remark,
+						license: license,
+						official: official,
+						hasOA: hasOA,
+						isCertified: isCertified,
+						source: 'page_about'
+					}
+
+					console.log(data)
+
+					$.ajax({
+						type: 'POST',
+						data: data,
+						url: '/xcx_gw/api/contactUs.php',
+						dataType: 'json',
+						success: function (msg) {
+							console.log(msg)
+							if (msg.result < 0) {
+								// 有错误信息，弹出提示
+								autoTips(msg.param.errorMsg);
+
+							} else if (msg.result > 0) {
+								// 操作成功,执行传过来的函数
+								autoTips(msg.param.errorMsg);
+								$('.serve .serve-select').hide();
+								$('.serve .serve-success').show();
+							}
+
+						},
+						error: function (msg) {
+							console.log(msg)
+							autoTips('网络异常，请稍后再试！');
+						}
+					});
+
+				}
+				// QQ客服接口
+				BizQQWPA.addCustom({
+					aty: '0',
+					a: '0',
+					nameAccount: 800135124,
+					selector: 'j-online-qq'
+				});
+			</script>
+</body>
+
+</html>
